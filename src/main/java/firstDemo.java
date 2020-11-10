@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * @author huaqiliang
@@ -7,7 +10,17 @@
  */
 
 public class firstDemo {
+    Properties properties = new Properties();
     public static void main(String[] args) {
         System.out.println("hello ! 小孟同学");
+        Map<String,String>  buildMap = new HashMap();
+        handleMap(buildMap);
+    }
+    private static Map<String,String> handleMap(Map<String,String> map){
+        Map<String,String>  buildMap = new HashMap();
+        buildMap.put("name","华启亮");
+        buildMap.put("otherName","毛牛");
+        buildMap.put("sex","男");
+        return null;
     }
 }
