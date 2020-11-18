@@ -13,6 +13,10 @@ public class firstDemo {
     Properties properties = new Properties();
     public static void main(String[] args) {
         System.out.println("hello ! 小孟同学");
+        int d = 2;
+        System.out.println(d<<1);
+        System.out.println(d + "=====" + (d|=(d<<1)));
+        System.out.println(d);
         Map<String,String>  buildMap = new HashMap();
         handleMap(buildMap);
     }
